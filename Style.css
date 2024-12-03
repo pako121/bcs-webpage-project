@@ -1,0 +1,330 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+
+/*Whole Main Setting*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+h3{
+    list-style: none;
+    background: #110f36;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+}
+
+
+/*Background -- Image or video*/
+/*body{
+   
+}
+
+
+/*Font for menus setting design*/
+li,a{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #000000;
+    
+}
+
+a{
+    padding: 2px 1px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 5%;
+    background-image: url(bgMAIN.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*logo images size*/
+img {
+    width: 100px;
+    height: 50px;
+    background: rgb(255, 255, 255);
+}
+
+/*Button login feature*/
+button{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    padding: 5px 20px;
+    background: #1d9e33;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transform: all 0.3s ease 0s;
+}
+
+button:hover{
+    background: #1d9e33;
+}
+
+
+/* Position of menus design*/
+.nav_links {
+    list-style: none;
+    
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+    
+}
+.nav_links li:a{
+    transition: all 0.3s ease 0s;
+}
+
+/*Under line hover feature*/
+a{
+    list-style: none;
+    position: relative;
+}
+a:before{
+    content: "";
+    background: #110f36;
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    height: 2px;
+    width: 0%;
+    transition: 0.3s ease 2ms;
+}
+a:hover:before{
+    content: "";
+    background: #110f36;
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    width: 100%;
+}
+
+
+/*Dropdown menus for About setting*/
+ul{
+    list-style: none;
+    background: rgb(255, 255, 255);
+}
+
+ul li{
+    display: inline-block;
+    position: relative;
+    margin-left: -20px;
+    background: rgb(255, 255, 255);
+}
+
+ul li a{
+    display: block;
+    text-decoration: none;
+    background: rgb(255, 255, 255);
+}
+
+ul li ul.dropdown li{
+    display: block;
+    bottom: -5px;
+    background: rgb(255, 255, 255);
+    width: 181px;
+}
+
+ul li ul.dropdown{
+    position: absolute;
+    z-index: 999;
+    display: none;
+    background: rgb(255, 255, 255);
+}
+
+
+ul li:hover ul.dropdown{
+    display: block;
+}
+
+ul li ul.dropdown2 li{
+    display: block;
+    bottom: -5px;
+    background: rgb(255, 255, 255);
+    width: 150px;
+}
+
+ul li ul.dropdown2
+{
+    position: absolute;
+    z-index: 999;
+    display: none;
+    background: rgb(255, 255, 255);
+}
+
+
+ul li:hover ul.dropdown2
+{
+    display: block;
+}
+
+
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .showcase
+  {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    transition: 0.5s;
+    z-index: 2;
+  }
+  .showcase.active
+  {
+    right: 300px;
+  }
+  
+  .showcase video
+  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+  }
+  .overlay
+  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #5d5380;
+    mix-blend-mode: overlay;
+  }
+  .text
+  {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .text h4
+  {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 65px;
+    color: #ffffff;
+    line-height: 1em;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+    
+  .text p
+  {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #bec926;
+    line-height: 1em;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .text .explore
+  {
+    display: inline-block;
+    font-size: 1em;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 10px;
+    color: #ffffff;
+    letter-spacing: 2px;
+    transition: 0.2s;
+    background: #1d9e33;
+    text-align: center;
+  }
+  .text .explore:hover
+  {
+    letter-spacing: 6px;
+    background: #2ae449;
+  }
+
+  .text .explore2
+  {
+    display: inline-block;
+    font-size: 1em;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 10px;
+    color: #ffffff;
+    letter-spacing: 2px;
+    transition: 0.2s;
+    background: #1d9e33;
+  }
+  .text .explore2:hover
+  {
+    letter-spacing: 6px;
+    background: #2ae449;
+  }
+
+  
+.hero {
+    background-image: url("../images/hero-banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: hsla(0, 0%, 0%, 0.7);
+    background-blend-mode: overlay;
+    display: grid;
+    place-items: center;
+    min-height: 600px;
+    text-align:center;
+    padding-top: 125px;
+  }
+  
+  .hero-title { 
+    margin-bottom: 10px; 
+    color: rgb(206, 151, 0);
+    font-size:65px;
+  }
+  
+  .hero-text {
+    color: var(--white);
+    font-size: var(--fs-5);
+    margin-bottom: 200px;
+    color: beige;
+  }
+  

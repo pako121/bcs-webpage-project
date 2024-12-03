@@ -1,0 +1,257 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+
+/*Whole Main Setting*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+h3{
+    list-style: none;
+    background: #110f36;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+}
+
+
+/*Background -- Image or video*/
+body{
+    background-image: url(background1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+/*Font for menus setting design*/
+li,a{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #000000;
+    
+}
+
+a{
+    padding: 2px 1px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 5%;
+    background-image: url(bgMAIN.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*logo images size*/
+img {
+    width: 100px;
+    height: 50px;
+    background: rgb(255, 255, 255);
+}
+
+/*Button login feature*/
+button{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    padding: 5px 20px;
+   background: #1d9e33;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transform: all 0.3s ease 0s;
+}
+
+button:hover{
+    background: #1d9e33;
+}
+
+
+/* Position of menus design*/
+.nav_links {
+    list-style: none;
+    
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+    
+}
+.nav_links li:a{
+    transition: all 0.3s ease 0s;
+}
+
+/*Under line hover feature*/
+a{
+    list-style: none;
+    position: relative;
+}
+a:before{
+    content: "";
+    background: #110f36;
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    height: 2px;
+    width: 0%;
+    transition: 0.3s ease 2ms;
+}
+a:hover:before{
+    content: "";
+    background: #110f36;
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    width: 100%;
+}
+
+
+/*Dropdown menus for About setting*/
+ul{
+    list-style: none;
+    background: rgb(255, 255, 255);
+}
+
+ul li{
+    display: inline-block;
+    position: relative;
+    margin-left: -20px;
+    background: rgb(255, 255, 255);
+}
+
+ul li a{
+    display: block;
+    text-decoration: none;
+    background: rgb(255, 255, 255);
+}
+
+ul li ul.dropdown li{
+    display: block;
+    bottom: -5px;
+    background: rgb(255, 255, 255);
+    width: 181px;
+}
+
+ul li ul.dropdown{
+    position: absolute;
+    z-index: 999;
+    display: none;
+    background: rgb(255, 255, 255);
+}
+
+
+ul li:hover ul.dropdown{
+    display: block;
+}
+
+ul li ul.dropdown2 li{
+    display: block;
+    bottom: -5px;
+    background: rgb(255, 255, 255);
+    width: 150px;
+}
+
+ul li ul.dropdown2{
+    position: absolute;
+    z-index: 999;
+    display: none;
+    background: rgb(255, 255, 255);
+}
+
+
+ul li:hover ul.dropdown2{
+    display: block;
+}
+
+.container{
+    background-image: url(maps.jpg);
+    background-size: cover;
+    position: absolute;
+    width: 1000px;
+    height: 500px;
+    left: 45px;
+    bottom: -15px;
+}
+
+.container .clip{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s ease 0s;
+}
+.container .clip.clip1{
+    background-image: url(maps.jpg);
+    background-size: cover;
+    clip-path: polygon(0 0, 14% 0, 45% 100%, 0 100%);
+}
+
+.container .clip.clip2{
+    background-image: url(map2.jpg);
+    background-size: cover;
+    clip-path: polygon(13% 0, 78% 0, 59% 100%, 41% 100%);
+
+}
+.container .clip.clip3{
+    background-image: url(map3.jpg);
+    background-size: cover;
+    clip-path: polygon(78% 0, 100% 0, 100% 100%, 57% 100%);
+
+}
+
+.container:hover .clip{
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
+.container .clip:hover{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.wrapper {
+    background-image: url(dark1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 500px 25px;
+    bottom: 0;
+    left: 0;
+}
+
+.maptext {
+    list-style: none;
+    background-image: url(namebg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+}
+
+.maptext2 {
+    list-style: none;
+    background-image: url(namebg.jpg);
+    background-repeat: no-repeat;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+}

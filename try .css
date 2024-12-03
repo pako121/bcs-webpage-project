@@ -1,0 +1,52 @@
+
+.container{
+    background: #110f36;
+    position: relative;
+    width: 1000px;
+    height: 500px;
+    left: 130px;
+    bottom: -15px;
+}
+
+.container .clip{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s ease-in-out;
+}
+.container .clip.clip1{
+    background-image: url(maps.jpg);
+    background-size: cover;
+    clip-path: polygon(0 0, 14% 0, 45% 100%, 0 100%);
+}
+
+.container .clip.clip2{
+    background-image: url(map2.jpg);
+    background-size: cover;
+    clip-path: polygon(13% 0, 78% 0, 59% 100%, 41% 100%);
+
+}
+.container .clip.clip3{
+    background-image: url(map3.jpg);
+    background-size: cover;
+    clip-path: polygon(78% 0, 100% 0, 100% 100%, 57% 100%);
+
+}
+
+.container:hover .clip{
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
+.container .clip:hover{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.wrapper {
+    background-image: url(dark1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 500px 25px;
+    bottom: 0;
+    left: 0;
+}
